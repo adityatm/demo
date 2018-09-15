@@ -1,0 +1,130 @@
+*{margin:0;padding:0;outline:none;}
+
+$primaryColor: #006c29;
+$greenColor: #469a25;
+$blackColor: #030303;
+$greyColor:#eeeeee;
+
+@mixin transform($property){
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+.box {
+    @include transform(rotate(30deg))
+}
+
+
+#header{
+    display: block;
+    position: relative;
+}
+
+.top_bar{
+    background: $primaryColor;
+}
+
+
+article[role="main"] {
+  float: left;
+  height: 200px;
+  width: 600px / 960px * 100%;
+  background-color: $primaryColor;
+}
+
+aside[role="complementary"] {
+  float: right;
+  height: 200px;;
+  width: 300px / 960px * 100%;
+  background-color: $blackColor;
+}
+
+
+/* Extend/Inheritance */
+
+/* This CSS won't print because %equal-heights is never extended. */
+%equal-heights {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* This CSS will print because %message-shared is extended. */
+  %message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .message {
+    @extend %message-shared;
+  }
+  
+  .success {
+    @extend %message-shared;
+    border-color: green;
+  }
+  
+  .error {
+    @extend %message-shared;
+    border-color: red;
+  }
+  
+  .warning {
+    @extend %message-shared;
+    border-color: yellow;
+  }
+
+
+/* Extend/Inheritance */
+%equl-width{
+    min-height: 200px;
+    width: 600px / 1000px * 100%;
+    background-color: $greyColor;
+}
+
+.full-width{
+    @extend %equl-width;
+    border: solid 2px $greenColor;
+}
+
+
+/* Mixin Decleared */
+
+@mixin padd-mix($value){
+    padding: $value;
+}
+.module{
+    @include padd-mix(20px);
+}
+
+
+/* @function */
+
+@function my-calculation-function($some-number, $another-number){
+    @return $some-number + $another-number
+  }
+
+.my-module{
+    padding: my-calculation-function(20px, 30px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

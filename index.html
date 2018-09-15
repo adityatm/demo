@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Jamboree Testing SASS CSS</title>
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<div id="wrapper">
+
+
+    <header id="header">
+        <div class="top_bar bg-green">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="top_bar_events">
+                            <span class="htt">Upcoming<br/> Events</span>
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <ul class="carousel-inner listEnv">
+                                    <li class="carousel-item active"><span class="text-cont">IESE Business School MBA Info Session Date <span class="times">6th January 2018 | Time : 3pm to 4pm</span></span> <a href="#!" class="btn btn-white-border btn-sm">Register Now</a></li>
+                                    <li class="carousel-item"><span class="text-cont">IESE Business School MBA Info Session Date <span class="times">27th March 2018 | Time : 3pm to 4pm</span></span> <a href="#!" class="btn btn-white-border btn-sm">Register Now</a></li>
+                                    <li class="carousel-item"><span class="text-cont">IESE Business School MBA Info Session Date <span class="times">2th July 2018 | Time : 3pm to 4pm</span></span> <a href="#!" class="btn btn-white-border btn-sm">Register Now</a></li>
+                                </ul>    
+                            </div><!-- end of top_bar_slid -->
+                        </div><!-- end of top_bar_events -->
+                    </div><!-- end of col -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <ul class="list-inline topinfo">
+                            <li><a href="tel:6596216221"><img src="images/phone-call.png" class="phone-call" alt=""> +65 9621 6221</a></li>
+                            <li><a href="#!" class="btn loginbtn"><i class="fa fa-sign-in fa-fw"></i> Student Login</a></li>
+                        </ul>
+                    </div><!-- end of col -->
+                </div><!-- end of row -->
+            </div><!-- end of cotainer -->
+        </div><!-- end of top_top -->
+    
+
+    </header><!-- end of header -->
+        
+
+    <div class="container">
+
+<article class="bg-grey" role="main"></article>
+<aside class="bg-grey2" role="complementary"></aside>
+<div class="clearfix"></div>
+<br/>
+<div class="error"></div>
+<div class="full-width"></div>
+<div class="clearfix"></div>
+<br/>
+
+<div class="my-module "></div>
+
+<code class="">
+    * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+      }
+      
+      .box {
+        -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        transform: rotate(30deg);
+      }
+      
+      #header {
+        display: block;
+        position: relative;
+      }
+      
+      .top_bar {
+        background: #006c29;
+      }
+      
+      article[role=main] {
+        float: left;
+        height: 200px;
+        width: 62.5%;
+        background-color: #006c29;
+      }
+      
+      aside[role=complementary] {
+        float: right;
+        height: 200px;
+        width: 31.25%;
+        background-color: #030303;
+      }
+      
+      /* Extend/Inheritance */
+      /* This CSS won't print because %equal-heights is never extended. */
+      /* This CSS will print because %message-shared is extended. */
+      .warning, .error, .success, .message {
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #333;
+      }
+      
+      .success {
+        border-color: green;
+      }
+      
+      .error {
+        border-color: red;
+      }
+      
+      .warning {
+        border-color: yellow;
+      }
+      
+      /* Extend/Inheritance */
+      .full-width {
+        min-height: 200px;
+        width: 60%;
+        background-color: #eeeeee;
+      }
+      
+      .full-width {
+        border: solid 2px #469a25;
+      }
+      
+      /* Mixin Decleared */
+      .module {
+        padding: 20px;
+      }
+      
+      /* @function */
+      .my-module {
+        padding: 50px;
+      }
+      
+      /*# sourceMappingURL=style.css.map */
+      
+    
+</code>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div><!-- end of wrapper -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

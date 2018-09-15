@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+#header {
+  display: block;
+  position: relative;
+}
+
+.top_bar {
+  background: #006c29;
+}
+
+article[role=main] {
+  float: left;
+  height: 200px;
+  width: 62.5%;
+  background-color: #006c29;
+}
+
+aside[role=complementary] {
+  float: right;
+  height: 200px;
+  width: 31.25%;
+  background-color: #030303;
+}
+
+/* Extend/Inheritance */
+/* This CSS won't print because %equal-heights is never extended. */
+/* This CSS will print because %message-shared is extended. */
+.warning, .error, .success, .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+/* Extend/Inheritance */
+.full-width {
+  min-height: 200px;
+  width: 60%;
+  background-color: #eeeeee;
+}
+
+.full-width {
+  border: solid 2px #469a25;
+}
+
+/* Mixin Decleared */
+.module {
+  padding: 20px;
+}
+
+/* @function */
+.my-module {
+  padding: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
